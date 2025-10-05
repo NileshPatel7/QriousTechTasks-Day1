@@ -15,7 +15,7 @@ public class First {
         return false;
     }
     public static int[] f1(int []arr){
-        // -1 is like underscore in this code
+       
         int newArr[]=new int[arr.length];
         int itr=0;
 
@@ -26,7 +26,7 @@ public class First {
             }
         }
 
-        for(int i=newArr.length-(arr.length-newArr.length);i<newArr.length;i++){
+        for(int i=newArr.length-(arr.length-itr);i<newArr.length;i++){
             newArr[i]=0;
         }
         return newArr;
