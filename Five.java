@@ -6,8 +6,8 @@ public class Five {
         }
         for(int i=0;i<haystack.length();i++){
             if(haystack.charAt(i)==needle.charAt(0)){
-                int j=i;
-                int c=0;
+                int j=i; // points to haystack match index
+                int c=0; // points to needle string
                 for(j=i;c<needle.length();j++,c++){
                     if(!(haystack.charAt(j)==needle.charAt(c))) {
                         break;
@@ -24,3 +24,4 @@ public class Five {
         System.out.println(stringMatch("iyphr","h"));
     }
 }
+
